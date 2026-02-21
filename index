@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemisferios Cerebrales</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+    user-select:none;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+header h2{
+    margin-top:15px;
+    font-weight:normal;
+    font-size:1.3rem;
+    opacity:0.9;
+}
+
+.main{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px 40px;
+    flex-wrap:wrap;
+}
+
+.panel{
+    width:350px;
+    padding:30px;
+    background:rgba(255,255,255,0.07);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+.panel:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,0.15);
+}
+
+.panel h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.panel ul{
+    line-height:1.8;
+    padding-left:20px;
+}
+
+.brain-container{
+    position:relative;
+    text-align:center;
+}
+
+.brain{
+    width:340px;
+    animation:float 5s ease-in-out infinite;
+    transition:0.5s;
+}
+
+.brain.left-active{
+    filter: drop-shadow(-15px 0 25px #ff4dc4);
+}
+
+.brain.right-active{
+    filter: drop-shadow(15px 0 25px #4da6ff);
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+.bottom{
+    margin:60px auto;
+    width:85%;
+    padding:50px;
+    background:rgba(255,255,255,0.07);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 40px rgba(0,0,0,0.4);
+    line-height:1.8;
+}
+
+.bottom h2, .bottom h3{
+    margin-top:25px;
+}
+
+.references{
+    margin:60px auto;
+    width:80%;
+    font-size:0.95rem;
+    opacity:0.85;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:0.9rem;
+    opacity:0.7;
+}
+
+@media(max-width:1000px){
+    .main{flex-direction:column;gap:40px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hemisferios Cerebrales</h1>
+    <h2>Actividad de Maestría</h2>
+    <h2>Carmen Adriana Cerda Malta</h2>
+</header>
+
+<section class="main">
+
+<div class="panel" id="leftPanel">
+<h2>Hemisferio Izquierdo</h2>
+<h3><center>🧠 ¿Qué habilidades están relacionadas con el hemisferio izquierdo?</h3>
+<br>
+Se asocia principalmente con funciones lógicas y analíticas:
+<br>
+<br>
+<ul>
+<li>Lenguaje (hablar, leer y escribir).</li>
+<li>Comprensión gramatical.</li>
+<li>Pensamiento lógico y matemático.</li>
+<li>Razonamiento secuencial.</li>
+<li>Análisis de detalles.</li>
+<li>Procesamiento de información verbal.</li>
+</ul>
+</div>
+
+<div class="brain-container">
+<img src="Cerebral_hemisphere_-_animation.gif" class="brain" id="brain">
+</div>
+
+<div class="panel" id="rightPanel">
+<h2>Hemisferio Derecho</h2>
+<h3><center>🎨 ¿Qué habilidades están relacionadas con el hemisferio derecho?</h3>
+<br>
+Se relaciona con funciones creativas y globales:
+<br>
+<br>
+<ul>
+<li>Creatividad e imaginación.</li>
+<li>Habilidades artísticas.</li>
+<li>Percepción espacial.</li>
+<li>Reconocimiento de rostros.</li>
+<li>Interpretación de emociones.</li>
+<li>Pensamiento intuitivo y global.</li>
+</ul>
+</div>
+
+</section>
+
+<section class="bottom">
+
+<h2>Inteligencias Múltiples y Hemisferios</h2>
+<p>La teoría de las Inteligencias Múltiples fue propuesta por Howard Gardner, quien sostiene que existen diversos tipos de inteligencia: lingüística, lógico-matemática, musical, espacial, corporal, interpersonal, intrapersonal y naturalista.</p>
+
+<h3>Relación con los hemisferios</h3>
+<ul>
+<li>La inteligencia lingüística y lógico-matemática se vincula con mayor frecuencia al hemisferio izquierdo.</li>
+<li>La inteligencia musical y espacial suele relacionarse con el hemisferio derecho.</li>
+<li>Sin embargo, el cerebro funciona de manera integrada.</li>
+</ul>
+
+<h3>Dominancia Hemisférica</h3>
+<p>Se refiere a la tendencia a utilizar con mayor frecuencia habilidades asociadas a un hemisferio específico. No implica exclusividad funcional.</p>
+
+<h3>Plasticidad Cerebral</h3>
+<p>El cerebro puede fortalecer conexiones neuronales mediante la práctica sistemática.</p>
+
+<h3>Desequilibrio Hemisférico</h3>
+<p>Puede manifestarse en dificultades del lenguaje, organización, coordinación o percepción espacial, especialmente en casos de lesión cerebral.</p>
+
+</section>
+
+<section class="references">
+<h3>Referencias (Formato APA)</h3>
+<p>Gardner, H. (1983). <i>Frames of Mind: The Theory of Multiple Intelligences</i>. Basic Books.</p>
+<p>Gazzaniga, M. (2000). <i>Cerebral specialization and interhemispheric communication</i>. Brain.</p>
+</section>
+
+<footer>
+© 2026 - Proyecto Académico
+</footer>
+
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+document.onkeydown = function(e){
+if(e.keyCode==123) return false;
+if(e.ctrlKey && e.shiftKey && e.keyCode==73) return false;
+if(e.ctrlKey && e.keyCode==85) return false;
+}
+
+const brain = document.getElementById("brain");
+document.getElementById("leftPanel").addEventListener("mouseover",()=>{
+brain.classList.add("left-active");
+brain.classList.remove("right-active");
+});
+document.getElementById("rightPanel").addEventListener("mouseover",()=>{
+brain.classList.add("right-active");
+brain.classList.remove("left-active");
+});
+document.querySelectorAll(".panel").forEach(p=>{
+p.addEventListener("mouseleave",()=>{
+brain.classList.remove("left-active");
+brain.classList.remove("right-active");
+});
+});
+</script>
+
+</body>
+</html>
